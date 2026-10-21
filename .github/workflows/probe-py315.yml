@@ -32,11 +32,11 @@ jobs:
       - name: torch queue int
         if: always()
         shell: bash
-        run: python .github/probe/queue.py int
+        run: python .github/probe/tensor_queue.py int
       - name: torch queue tensor
         if: always()
         shell: bash
-        run: python .github/probe/queue.py tensor
+        run: python .github/probe/tensor_queue.py tensor
       - name: Minimal DataLoader num_workers=2
         if: always()
         shell: bash
